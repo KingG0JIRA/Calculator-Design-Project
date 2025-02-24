@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scientific Calculator</title>
+    <link id="theme-style" rel="stylesheet" type="text/css" href="css/light-theme.css">
+    <script src="https://kit.fontawesome.com/9f97db5e63.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+</head>
+<body>
+    
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="javascript:void(0);" id="toggle-theme">Toggle Theme</a>
+        <a href="javascript:void(0);" id="myBtn">Credits</a>
+    </div>
+
+
+
+    <div id="myModal" class="modal">
+    <div class="modal-content">
+    <span class="close">&times;</span>
+    <p align="center"><strong> ASSIGNMENT PROJECT </strong></p>
+    <p>CALCULATOR</p>
+    <h2>Project Overview:</h2>
+    <p>
+        The project aims to develop a user-friendly and functional scientific calculator. 
+        This web-based calculator supports basic arithmetic operations like addition, 
+        subtraction, multiplication, and division, as well as more advanced mathematical 
+        functions such as square root, trigonometric operations (sin, cos, tan), 
+        logarithmic functions (log, ln), and exponential calculations.
+    </p>
+    
+    <h2>Key Features:</h2>
+    <ul style="all: unset;">
+        <li style="all: unset;"><strong>Arithmetic Operations:</strong> Perform basic operations like addition, subtraction, multiplication, and division.</li>
+        <li style="all: unset;"><strong>Scientific Functions:</strong> Supports advanced functions such as trigonometric functions (sin, cos, tan), inverse functions, square root, power (exponentiation), and constants like Pi.</li>
+        <li style="all: unset;"><strong>UI Design:</strong> The user interface is designed to be simple and intuitive, with a clear output display and easy-to-use buttons for calculations.</li>
+        <li style="all: unset;"><strong>Responsive Design:</strong> The design ensures that the calculator works well across different screen sizes, making it accessible on both desktop and mobile devices.</li>
+        <li style="all: unset;"><strong>Interactive Menu:</strong> Includes a sliding side navigation menu for additional features like switching between light and dark themes and accessing the credits.</li>
+    </ul>
+    
+    <h2>Technologies Used:</h2>
+    <ul style="all: unset;">
+        <li style="all: unset;"><strong>HTML:</strong> Structure and layout of the web page.</li>
+        <li style="all: unset;"><strong>CSS:</strong> Styling for the calculator, buttons, and layout.</li>
+        <li style="all: unset;"><strong>JavaScript:</strong> Handles the functionality of the calculator, including mathematical operations and interactions with the user interface.</li>
+        <li style="all: unset;"><strong>Font Awesome & Bootstrap Icons:</strong> Used for adding icons to enhance the design and user experience.</li>
+    </ul>
+    
+    <h2>Future Enhancements:</h2>
+    <ul style="all: unset;">
+        <li style="all: unset;">Adding additional scientific functions like logarithmic bases, factorials, and other advanced operations.</li>
+        <li style="all: unset;">Improving the design to include a history log of previous calculations.</li>
+        <li style="all: unset;">Providing more themes or skins for better user customization.</li>
+    </ul>
+    
+    </div>
+</div>
+
+<h1 class="text_Items">CALCULATOR</h1>
+    <div id="Calculator">
+       
+    
+     
+        <div class="calculator__output">0</div>
+        <div class="menuOpr">
+            <button class="calculator__top "><i class="fa-solid fa-square-root-variable"></i></button>
+            <button class="calculator__top ">&#960;</button>
+            <button class="calculator__top ">^</button>
+            <button class="calculator__top ">!</button>
+            <button class="calculator__top "href="javascript:void(0);" class="icon" onclick="myFunction()">&#9660;</button>
+            <div class="topnav"><div id="myLinks">
+          <button class="calculator__menu">RAD</button>
+          <button class="calculator__menu">sin</button>
+          <button class="calculator__menu">cos</button>
+          <button class="calculator__menu">tan</button>
+          <button class="calculator__menu">inv</button>
+          <button class="calculator__menu">e</button>
+          <button class="calculator__menu">ln</button>
+          <button class="calculator__menu">log</button>
+        </div></div></div> 
+        
+        
+        <div class="calculator_keys">
+            <button class="calculator__key calculator__key--func">AC</button>
+            <button class="calculator__key calculator__key--operator">( )</button>
+            <button class="calculator__key calculator__key--operator">%</button>
+            <button class="calculator__key calculator__key--operator">÷</button>
+
+            
+            <button class="calculator__key">7</button>
+            <button class="calculator__key">8</button>
+            <button class="calculator__key">9</button>
+            <button class="calculator__key calculator__key--operator">×</button>
+
+           
+            <button class="calculator__key">4</button>
+            <button class="calculator__key">5</button>
+            <button class="calculator__key">6</button>
+            <button class="calculator__key calculator__key--operator">−</button>
+
+          
+            <button class="calculator__key">1</button>
+            <button class="calculator__key">2</button>
+            <button class="calculator__key">3</button>
+            <button class="calculator__key calculator__key--operator">+</button>
+
+            <button class="calculator__key">0</button>
+            <button class="calculator__key">.</button>
+            <button class="calculator__key"><i class="fa-solid fa-delete-left"></i></button>
+            <button class="calculator__key calculator__key--enter">=</button>
+        </div>
+        
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

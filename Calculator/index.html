@@ -2,27 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Scientific Calculator</title>
-    <link rel="stylesheet" type="text/css" href="css/calc_style.css">
+    <link id="theme-style" rel="stylesheet" type="text/css" href="css/light-theme.css">
     <script src="https://kit.fontawesome.com/9f97db5e63.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
 </head>
 <body>
-    <h1 class="text_Items">CALCULATOR</h1>
+    
+    <button id="menu-btn">☰</button>
+    <div id="menu" class="menu">
+        <ul>
+            <li id="toggle-theme">Toggle Theme</li>
+            <li id="myBtn">Credits</li>
+        </ul>
+
+
+    <div id="myModal" class="modal">
+    <div class="modal-content">
+    <span class="close">&times;</span>
+    <p align="center"><strong> DESIGN ASSIGNMENT PROJECT </strong></p>
+    <p>CALCULATOR</p>
+</div>
+        </ul>
+    </div>
+</div>
+
+  
+<h1 class="text_Items">CALCULATOR</h1>
     <div id="Calculator">
-        
+       
+    
+     
         <div class="calculator__output">0</div>
-
-        <div class="calculator_keys">
+        <div class="menuOpr">
+            <button class="calculator__top "><i class="fa-solid fa-square-root-variable"></i></button>
+            <button class="calculator__top ">&#960;</button>
+            <button class="calculator__top ">^</button>
+            <button class="calculator__top ">!</button>
+            <button class="calculator__top "href="javascript:void(0);" class="icon" onclick="myFunction()">&#9660;</button>
+            <div class="topnav"><div id="myLinks">
+          <button class="calculator__menu">RAD</button>
+          <button class="calculator__menu">sin</button>
+          <button class="calculator__menu">cos</button>
+          <button class="calculator__menu">tan</button>
+          <button class="calculator__menu">inv</button>
+          <button class="calculator__menu">e</button>
+          <button class="calculator__menu">ln</button>
+          <button class="calculator__menu">log</button>
+        </div></div></div> 
         
-            <button class="calculator__key"><i class="fa-solid fa-square-root-variable"></i></button>
-            <button class="calculator__key">π</button>
-            <button class="calculator__key">^</button>
-            <button class="calculator__key">!</button>
-
-            
+        
+        <div class="calculator_keys">
             <button class="calculator__key calculator__key--func">AC</button>
             <button class="calculator__key calculator__key--operator">( )</button>
             <button class="calculator__key calculator__key--operator">%</button>
@@ -51,7 +87,9 @@
             <button class="calculator__key"><i class="fa-solid fa-delete-left"></i></button>
             <button class="calculator__key calculator__key--enter">=</button>
         </div>
+        
     </div>
 
+    <script src="js/index.js"></script>
 </body>
 </html>
