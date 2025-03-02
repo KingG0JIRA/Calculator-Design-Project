@@ -79,6 +79,8 @@ button:hover {
     gap: 10px;
     width: 55px;
     height: 55px; 
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
     font-size: 1rem;
     border: none;
     border-radius: 50%; 
@@ -208,12 +210,21 @@ button:hover {
     right: 20px;
     background: none;
     border: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: rgb(246, 241, 241);
-    cursor: pointer;
-    
+    cursor: pointer;   
 }
 
+#menu-btn:hover {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: rgb(135, 128, 128);
+  cursor: pointer;
+}
 
 .menu {
     display: none;

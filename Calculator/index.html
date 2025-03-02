@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scientific Calculator</title>
     <link id="theme-style" rel="stylesheet" type="text/css" href="css/light-theme.css">
     <script src="https://kit.fontawesome.com/9f97db5e63.js" crossorigin="anonymous"></script>
@@ -11,17 +11,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    
 
 </head>
 <body>
     
-    <button id="menu-btn">☰</button>
+    <button id="menu-btn">&#x2699;</button>
     <div id="menu" class="menu">
         <ul>
             <li id="toggle-theme">Toggle Theme</li>
             <li id="myBtn">Credits</li>
         </ul>
-
+</div>
 
     <div id="myModal" class="modal">
     <div class="modal-content">
@@ -31,14 +32,20 @@
 </div>
         </ul>
     </div>
-</div>
 
-  
+
+
 <h1 class="text_Items">CALCULATOR</h1>
-    <div id="Calculator">
-       
-    
-     
+    <div id="Calculator"><div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="currency_converter.html">Currency Converter</a>
+        <a href="date_calc.html">Date calculation</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+      
+      <button class="openbtn" onclick="openNav()">&#9776;</button>
+    <script src="js/index.js"></script>
         <div class="calculator__output">0</div>
         <div class="menuOpr">
             <button class="calculator__top "><i class="fa-solid fa-square-root-variable"></i></button>
@@ -89,7 +96,6 @@
         </div>
         
     </div>
-
-    <script src="js/index.js"></script>
+    
 </body>
 </html>
