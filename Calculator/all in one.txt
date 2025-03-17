@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scientific Calculator</title>
     <link id="theme-style" rel="stylesheet" type="text/css" href="css/light-theme.css">
     <script src="https://kit.fontawesome.com/9f97db5e63.js" crossorigin="anonymous"></script>
@@ -11,74 +11,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    
 
 </head>
 <body>
     
-    <button id="menu-btn">☰</button>
+    <button id="menu-btn">&#x2699;</button>
     <div id="menu" class="menu">
         <ul>
             <li id="toggle-theme">Toggle Theme</li>
             <li id="myBtn">Credits</li>
         </ul>
-
+</div>
 
     <div id="myModal" class="modal">
     <div class="modal-content">
     <span class="close">&times;</span>
-    <p align="center"><strong> ASSIGNMENT PROJECT </strong></p>
+    <p align="center"><strong> DESIGN ASSIGNMENT PROJECT </strong></p>
     <p>CALCULATOR</p>
-    <h2>Project Overview:</h2>
-    <p>
-        The project aims to develop a user-friendly and functional scientific calculator. 
-        This web-based calculator supports basic arithmetic operations like addition, 
-        subtraction, multiplication, and division, as well as more advanced mathematical 
-        functions such as square root, trigonometric operations (sin, cos, tan), 
-        logarithmic functions (log, ln), and exponential calculations.
-    </p>
-    
-    <h2>Key Features:</h2>
-    <ul style="all: unset;">
-        <li style="all: unset;"><strong>Arithmetic Operations:</strong> Perform basic operations like addition, subtraction, multiplication, and division.</li>
-        <li style="all: unset;"><strong>Scientific Functions:</strong> Supports advanced functions such as trigonometric functions (sin, cos, tan), inverse functions, square root, power (exponentiation), and constants like Pi.</li>
-        <li style="all: unset;"><strong>UI Design:</strong> The user interface is designed to be simple and intuitive, with a clear output display and easy-to-use buttons for calculations.</li>
-        <li style="all: unset;"><strong>Responsive Design:</strong> The design ensures that the calculator works well across different screen sizes, making it accessible on both desktop and mobile devices.</li>
-        <li style="all: unset;"><strong>Interactive Menu:</strong> Includes a sliding side navigation menu for additional features like switching between light and dark themes and accessing the credits.</li>
-    </ul>
-    
-    <h2>Technologies Used:</h2>
-    <ul style="all: unset;">
-        <li style="all: unset;"><strong>HTML:</strong> Structure and layout of the web page.</li>
-        <li style="all: unset;"><strong>CSS:</strong> Styling for the calculator, buttons, and layout.</li>
-        <li style="all: unset;"><strong>JavaScript:</strong> Handles the functionality of the calculator, including mathematical operations and interactions with the user interface.</li>
-        <li style="all: unset;"><strong>Font Awesome & Bootstrap Icons:</strong> Used for adding icons to enhance the design and user experience.</li>
-    </ul>
-    
-    <h2>Future Enhancements:</h2>
-    <ul style="all: unset;">
-        <li style="all: unset;">Adding additional scientific functions like logarithmic bases, factorials, and other advanced operations.</li>
-        <li style="all: unset;">Improving the design to include a history log of previous calculations.</li>
-        <li style="all: unset;">Providing more themes or skins for better user customization.</li>
-    </ul>
-    
 </div>
         </ul>
     </div>
-</div>
-<div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#"></a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
-  </div>
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-  
+
+
+
 <h1 class="text_Items">CALCULATOR</h1>
     <div id="Calculator">
-       
-    
-     
+      
+      
+    <script src="js/index.js"></script>
         <div class="calculator__output">0</div>
         <div class="menuOpr">
             <button class="calculator__top "><i class="fa-solid fa-square-root-variable"></i></button>
@@ -129,13 +90,10 @@
         </div>
         
     </div>
-
-    <script src="js/index.js"></script>
+    
 </body>
 </html>
 
-
-css:
 
 
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
@@ -145,7 +103,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #696868;
+    background-color: #646567 ;
     font-family: 'Open Sans', sans-serif;
     flex-direction: column;
     display: flex;
@@ -345,17 +303,30 @@ button:hover {
     right: 20px;
     background: none;
     border: none;
-    font-size: 1.5rem;
-    color: rgb(84, 80, 80);
+    font-size: 2rem;
+    color: rgb(27, 26, 26);
     cursor: pointer;
     
+}
+
+
+#menu-btn:hover{
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: rgb(255, 249, 249);
+  cursor: pointer;
+  
 }
 
 
 .menu {
     display: none;
     position: absolute;
-    top: 60px;
+    top: 65px;
     right: 20px;
     background: #181c27;
     padding: 10px;
@@ -420,17 +391,17 @@ button:hover {
     .sidenav a {font-size: 18px;}
   }
   .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    padding-top: 100px; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
   }
   
   
@@ -446,7 +417,7 @@ button:hover {
   
   
   .close {
-    color: #d2b3b3;
+    color: #fffafa;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -460,10 +431,49 @@ button:hover {
   }
 
 
-  js:
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
 
 
-  document.addEventListener("DOMContentLoaded", () => {
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+
+.header-right {
+  float: right;
+}
+
+
+ document.addEventListener("DOMContentLoaded", () => {
     const menuBtn = document.getElementById("menu-btn");
     const menu = document.getElementById("menu");
 
@@ -539,7 +549,7 @@ function openNav() {
 
   var modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
+
 var btn = document.getElementById("myBtn");
 
 
@@ -561,3 +571,12 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
+
+
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+} 
